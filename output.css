@@ -20,6 +20,10 @@ p {
   padding: 20px;
 }
 
+header {
+  height: 60px;
+}
+
 p,
 .grad-verified {
   font-weight: 500;
@@ -249,9 +253,15 @@ p,
     margin: 20px 10px;
   }
 
-  h2,
-p {
-    padding-bottom: 2px;
+  h2 {
+    font-size: medium;
+    padding: 1px 15px;
+  }
+
+  p {
+    opacity: 70%;
+    line-height: 2;
+    margin: 5px;
   }
 
   .card-container {
