@@ -79,12 +79,10 @@ p,
 }
 
 .bg-card-svg {
-    background-image: image("images/bg-pattern-quotation.svg");
-    background-repeat: no-repeat;
-    background-position: 80% 0;
-    margin-right: 15px;
-    margin-top: 15px;
-    grid-column: 6 / 6;
+    position: absolute;
+    z-index: -1;
+    left: 70%;
+    top: 0;
 }
 
 .card {
@@ -120,6 +118,8 @@ p,
 
 .card-1 {
     background-color: $moderate-violet;
+    position: relative;
+    z-index: -2;
 }
 
 .card-2 {
@@ -156,11 +156,14 @@ p,
     grid-column: 2 / 4;
 }
 
-@media screen and (min-width: $mobile) {
+@media all and (min-width: $mobile) {
     body {
         margin: $large-body-margin $standard-body-margin;
     }
-
+    .bg-card-svg {
+        position: absolute;
+        left: 55%;
+    }
     .card {
         margin-bottom: $card-bt-margin;
     }
@@ -174,7 +177,7 @@ p,
     }
 }
 
-@media screen and (min-width: $ipad) {
+@media all and (min-width: $ipad) {
     body {
         margin: $large-body-margin $standard-body-margin;
     }
@@ -182,7 +185,10 @@ p,
     h2 {
         font-size: medium;
     }
-
+    .bg-card-svg {
+        position: absolute;
+        left: 70%;
+    }
     .card {
         margin-bottom: $card-bt-margin;
     }
@@ -198,8 +204,8 @@ p,
 
     .grid-container {
         display: grid;
-        grid-template: repeat(18, 50px) / repeat(18, 1fr);
-        grid-gap: 15px;
+        grid-template: repeat(18, 1fr) / repeat(18, 1fr);
+        grid-gap: 2px;
     }
 
     .Daniel {
@@ -247,11 +253,14 @@ p,
         line-height: 2;
         margin: 5px;
     }
-
+    .bg-card-svg {
+        position: absolute;
+        left: 65%;
+    }
     .grid-container {
         display: grid;
-        grid-template: repeat(18, 50px) / repeat(18, 1fr);
-        grid-gap: 15px;
+        grid-template: repeat(18, 1fr) / repeat(18, 1fr);
+        grid-gap: 2px;
     }
 
     .Daniel {
@@ -306,8 +315,8 @@ p,
 
     .grid-container {
         display: grid;
-        grid-template: repeat(18, 50px) / repeat(14, 1fr);
-        grid-gap: 30px;
+        grid-template: repeat(18, 1fr) / repeat(14, 1fr);
+        grid-gap: 2px;
     }
 
     .Daniel {
