@@ -11,7 +11,7 @@ body {
 
 h2 {
   font-weight: 500;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 p {
@@ -128,6 +128,10 @@ p,
     margin: 50px 20px;
   }
 
+  p {
+    line-height: 2;
+  }
+
   .bg-card-svg {
     position: absolute;
     left: 55%;
@@ -152,6 +156,13 @@ p,
 
   h2 {
     font-size: medium;
+    margin: 20px 5px;
+    line-height: 1.25;
+  }
+
+  p {
+    line-height: 2;
+    margin: 20px 15px;
   }
 
   .bg-card-svg {
@@ -195,11 +206,7 @@ p,
 
   .Jeanette {
     grid-column: 10/18;
-    grid-row: 9/13;
-  }
-
-  .Jeanette > h2 {
-    padding: 1px 30px;
+    grid-row: 8/14;
   }
 
   .Patrick {
@@ -214,7 +221,7 @@ p,
 
   h2 {
     font-size: medium;
-    padding: 1px 15px;
+    padding: 1px 5px;
   }
 
   p {

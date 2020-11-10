@@ -44,7 +44,7 @@ body {
 
 h2 {
     font-weight: $text-weight-normal;
-    padding: 15px;
+    padding: 0 15px;
 }
 
 p {
@@ -160,10 +160,14 @@ p,
     body {
         margin: $large-body-margin $standard-body-margin;
     }
+    p {
+        line-height: 2;
+    }
     .bg-card-svg {
         position: absolute;
         left: 55%;
     }
+
     .card {
         margin-bottom: $card-bt-margin;
     }
@@ -184,11 +188,20 @@ p,
 
     h2 {
         font-size: medium;
+        margin: $standard-body-margin 5px;
+        line-height: 1.25;
     }
+
+    p {
+        line-height: 2;
+        margin: $standard-body-margin 15px;
+    }
+
     .bg-card-svg {
         position: absolute;
         left: 70%;
     }
+
     .card {
         margin-bottom: $card-bt-margin;
     }
@@ -225,11 +238,7 @@ p,
 
     .Jeanette {
         grid-column: 10 / 18;
-        grid-row: 9 / 13;
-    }
-
-    .Jeanette>h2 {
-        padding: 1px 30px;
+        grid-row: 8 / 14;
     }
 
     .Patrick {
@@ -245,7 +254,7 @@ p,
 
     h2 {
         font-size: medium;
-        padding: 1px 15px;
+        padding: 1px 5px;
     }
 
     p {
@@ -253,10 +262,12 @@ p,
         line-height: 2;
         margin: 5px;
     }
+
     .bg-card-svg {
         position: absolute;
         left: 65%;
     }
+
     .grid-container {
         display: grid;
         grid-template: repeat(18, 1fr) / repeat(18, 1fr);
